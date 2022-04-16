@@ -1,13 +1,15 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+@font-face {
+    font-family: 'San Francisco Pro Display Thin';
+    src: url('../src/media/fonts/sf_pro_display/SFProDisplay-Thin.eot');
+    src: url('../src/media/fonts/sf_pro_display/SFProDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../src/media/fonts/sf_pro_display/SFProDisplay-Thin.woff') format('woff'),
+    url('../src/media/fonts/sf_pro_display/SFProDisplay-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

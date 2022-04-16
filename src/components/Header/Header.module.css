@@ -1,0 +1,49 @@
+.container{
+    background-color: #FFFFFF;
+    height: 100%;
+    font-family: 'San Francisco Pro Display Thin';
+    font-style: normal;
+    justify-content: space-between;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap:calc(1vw + 20px);
+    box-shadow: 0px 4px 5px #E9EDF3;
+    
+}
+.date{
+    color: #899CB1;
+}
+.organisationName{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.progressBars{
+    
+    display: flex;
+    font-weight: 600;
+    font-size: calc(10px + 0.2vw);
+    gap: 25px;
+}
+.progressBars span{
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.progressbar{
+    width: calc(150px + 1vw);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.progressbar div{
+    min-height: 5px;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
