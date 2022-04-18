@@ -4,9 +4,9 @@ import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
 
 const ProgressBars = () => {
-    const [newCalls, setNewCalls] = useState(20)
-    const [talksQuality, setTalksQuality] = useState(70)
-    const [convertInOrder, setConvertInOrder] = useState(10)
+    const [newCalls, setNewCalls] = useState(9)
+    const [talksQuality, setTalksQuality] = useState(46)
+    const [convertInOrder, setConvertInOrder] = useState(80)
 
     const newCallsColor = () =>{
         if(newCalls < 10){
@@ -21,9 +21,9 @@ const ProgressBars = () => {
     const getColor = (percent) =>{
         if(percent < 30){
           return '#EA1A4F'
-        }else if( percent < 55){
+        }else if( percent <= 55){
           return '#FFD500'
-        }else if(percent >= 80){
+        }else if(percent > 55){
           return '#28A879'
         }
     }
@@ -50,18 +50,16 @@ const ProgressBars = () => {
 
         <div className={style.progressbar}>
          <div>
-         Новые звонки 
+           Новые звонки 
           <span style={{color: newCallsColor()}}>{newCalls} из 30 шт</span>
          </div>
           <Progress
-              style={{
-               
-              }}
-              status={newCalls < 10 ? 'success'  : 
+              status={
+                      newCalls < 10 ? 'success'  : 
                       newCalls < 20 ? 'active'   :
-                      newCalls >= 20 ? 'default' : null}
+                      newCalls >= 20 ? 'default' : null
+                      }
               theme={progressTheme}
-              
               percent={newCalls * (100 / 30)}
               
           />
@@ -73,9 +71,9 @@ const ProgressBars = () => {
           <span style={{color: getColor(talksQuality)}}>{talksQuality}%</span></div>
           <Progress
               status={
-                      talksQuality < 30 ? 'success'  : 
-                      talksQuality < 55 ? 'active'   :
-                      talksQuality >= 80 ? 'default' : null
+                      talksQuality <= 30 ? 'success'  : 
+                      talksQuality <= 55 ? 'active'   :
+                      talksQuality > 55 ? 'default' : null
                     }
               theme={progressTheme}
               percent={talksQuality}
@@ -89,9 +87,9 @@ const ProgressBars = () => {
           </div>
           <Progress
               status={
-                      convertInOrder < 30 ? 'success'  : 
-                      convertInOrder < 55 ? 'active'   :
-                      convertInOrder >= 80 ? 'default' : null
+                      convertInOrder <= 30 ? 'success'  : 
+                      convertInOrder <= 55 ? 'active'   :
+                      convertInOrder > 55 ? 'default' : null
                     }
               theme={progressTheme}
               percent={convertInOrder}

@@ -1,6 +1,31 @@
 .container{
     width: 80%;
-    height: 80%;
+    height: 100%;
     background-color: white;
     border-radius: 8px;
+    color: #899CB1;
+    font-family: 'San Francisco Pro Display Thin';
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+    padding: 0 40px;
 }
+.headlines{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.3fr 0.4fr 0.6fr 1.1fr 0.9fr 1.6fr 0.4fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "type time employee call source grade duration"; 
+    padding: 22px 0;
+    font-weight: 600;
+}
+.type { grid-area: type; }
+.time { grid-area: time; }
+.employee { grid-area: employee; }
+.call { grid-area: call; }
+.source { grid-area: source; }
+.grade { grid-area: grade; }
+.duration { grid-area: duration;} 
+

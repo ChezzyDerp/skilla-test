@@ -1,11 +1,11 @@
 .container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
     grid-template-columns: 0.43fr 1.3fr 0.8fr 0.9fr; 
-    grid-template-rows: 0.2fr 1.7fr 1fr; 
+    grid-template-rows: 50px 1.7fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "nav_menu header header header"
@@ -15,17 +15,21 @@
 
 .nav_menu {
     grid-area: nav_menu; 
+    height: 100%;
+
 }
 .header {
     grid-area: header;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 4px 5px #E9EDF3;
 }
 .main {
     grid-area: main;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #F1F4F9;
+    padding-top: 50px;
 }

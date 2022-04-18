@@ -12,7 +12,8 @@ const Header = () => {
 
 
   const [organisationName, setOrganisationName] = useState('ИП Сидорова Александра Михайловна')
- 
+  const [dateModalWindow, setDateModalWindow] = useState(true)
+
   const date = new Date()
 
  
@@ -21,8 +22,11 @@ const Header = () => {
 
       <div className={style.date}>
         {getWeekDay(date)}, {date.getDate()} {getMonth(date)}
+        {/* <div className={style.dateModal}>
+        3 дня
+      </div> */}
       </div>
-      
+     
       <ProgressBars/>
 
      <img src={search_icon} className={style.search} alt="" />

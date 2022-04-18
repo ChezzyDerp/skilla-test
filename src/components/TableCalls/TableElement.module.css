@@ -1,0 +1,42 @@
+.data{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.3fr 0.4fr 0.6fr 1.1fr 0.9fr 1.6fr 0.4fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "type time employee call source grade duration"; 
+    padding: 22px 0;
+    
+    font-weight: 600;
+    color: #122945;
+}
+.data div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.br{
+    height: 1px;
+    background-color: #EAF0FA;
+}
+.type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.employee{
+    
+}
+.employee img{
+    width: 25%;
+}
+
+.source{
+    color: #5E7793;
+}
