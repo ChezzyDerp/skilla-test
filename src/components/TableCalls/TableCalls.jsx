@@ -5,7 +5,7 @@ import dateFormat from "dateformat";
 import TableElement from './TableElement';
 
 const TableCalls = () => {
-  const token = 'qwerty123'
+  const token = 'testtoken'
   const [tableData, setTableData] = useState([])
 
   useEffect(() =>{

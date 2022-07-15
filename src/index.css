@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'San Francisco Pro Display Thin';
+    font-style: normal;
 }
 @font-face {
     font-family: 'San Francisco Pro Display Thin';

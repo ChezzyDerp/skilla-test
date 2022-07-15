@@ -1,6 +1,8 @@
+import { Route, Routes, useParams } from 'react-router-dom';
 import style from './App.module.css';
 import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
+import SomeRoute from './components/SomeRoute';
 import TableCalls from './components/TableCalls/TableCalls';
 
 const App = () => {
@@ -16,7 +18,11 @@ const App = () => {
       </div>
       
       <div className={style.main}>
-        <TableCalls/>
+        <Routes>
+          <Route path='/:name' element={<SomeRoute/>}/>
+          <Route path='/calls' element={<TableCalls/>}/>
+        </Routes>
+        
       </div>
       
     </div>
